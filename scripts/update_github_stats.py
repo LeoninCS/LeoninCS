@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 
 import json
-import math
 import os
 import re
 import urllib.parse
@@ -76,37 +75,6 @@ def format_number(value):
     return str(value)
 
 
-def score_grade(totals):
-    score = (
-        min(totals["stars"] / 500, 1) * 35
-        + min(totals["commits"] / 2_000, 1) * 35
-        + min(totals["pull_requests"] / 100, 1) * 20
-        + min(totals["repositories"] / 30, 1) * 10
-    )
-    if score >= 85:
-        return "A+"
-    if score >= 70:
-        return "A"
-    if score >= 55:
-        return "B+"
-    if score >= 40:
-        return "B"
-    if score >= 25:
-        return "C+"
-    return "C"
-
-
-def grade_progress(grade):
-    return {
-        "A+": 0.94,
-        "A": 0.86,
-        "B+": 0.76,
-        "B": 0.66,
-        "C+": 0.52,
-        "C": 0.38,
-    }[grade]
-
-
 def icon_path(name):
     icons = {
         "star": '<path d="M12 2.5l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.3l-5.8 3.1 1.1-6.5-4.7-4.6 6.5-.9L12 2.5z"/>',
@@ -120,61 +88,65 @@ def icon_path(name):
 
 def svg_icon(name, x, y):
     return f"""
-    <svg x="{x}" y="{y}" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#4ade80" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+    <svg x="{x}" y="{y}" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#4ade80" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
       {icon_path(name)}
     </svg>"""
 
 
-def render_stat(icon, label, value, y):
+def render_row(icon, label, value, scope, y, shaded):
+    fill = "#111820" if shaded else "#0d1117"
     return f"""
-  {svg_icon(icon, 32, y - 16)}
-  <text x="68" y="{y}" class="label">{escape(label)}</text>
-  <text x="330" y="{y}" class="value">{escape(format_number(value))}</text>"""
+  <rect x="30" y="{y}" width="580" height="43" rx="7" fill="{fill}"/>
+  {svg_icon(icon, 46, y + 10)}
+  <text x="82" y="{y + 27}" class="metric">{escape(label)}</text>
+  <text x="430" y="{y + 27}" class="value">{escape(format_number(value))}</text>
+  <text x="535" y="{y + 27}" class="scope" text-anchor="middle">{escape(scope)}</text>"""
 
 
 def build_svg(totals):
-    grade = score_grade(totals)
-    progress = grade_progress(grade)
-    radius = 52
-    circumference = 2 * math.pi * radius
-    dash = circumference * progress
-    gap = circumference - dash
-
     stats = [
-        ("star", "Total Stars Earned:", totals["stars"], 86),
-        ("commit", "Total Commits:", totals["commits"], 124),
-        ("pr", "Total PRs:", totals["pull_requests"], 162),
-        ("issue", "Total Issues:", totals["issues"], 200),
-        ("repo", "Repositories:", totals["repositories"], 238),
+        ("star", "Total Stars Earned", totals["stars"], "Owned repos"),
+        ("commit", "Total Commits", totals["commits"], "Public"),
+        ("pr", "Total Pull Requests", totals["pull_requests"], "Authored"),
+        ("issue", "Total Issues", totals["issues"], "Authored"),
+        ("repo", "Repositories", totals["repositories"], "Owned"),
     ]
 
-    stats_markup = "\n".join(render_stat(*stat) for stat in stats)
+    rows_markup = "\n".join(
+        render_row(*stat, y=102 + index * 48, shaded=index % 2 == 0)
+        for index, stat in enumerate(stats)
+    )
 
-    return f"""<svg width="640" height="290" viewBox="0 0 640 290" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+    return f"""<svg width="640" height="380" viewBox="0 0 640 380" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
   <title id="title">{escape(USERNAME)}'s GitHub Stats</title>
   <desc id="desc">GitHub profile statistics for {escape(USERNAME)}.</desc>
   <defs>
     <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
       <feDropShadow dx="0" dy="12" stdDeviation="18" flood-color="#000000" flood-opacity="0.28"/>
     </filter>
-    <linearGradient id="ring" x1="468" y1="118" x2="582" y2="232" gradientUnits="userSpaceOnUse">
+    <linearGradient id="accent" x1="30" y1="28" x2="610" y2="28" gradientUnits="userSpaceOnUse">
       <stop stop-color="#4ade80"/>
+      <stop offset="0.52" stop-color="#22d3ee"/>
       <stop offset="1" stop-color="#f4b36b"/>
     </linearGradient>
   </defs>
   <style>
     .card {{ fill: #0d1117; }}
-    .title {{ fill: #d1d5db; font: 700 24px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }}
-    .label {{ fill: #9ca3af; font: 700 17px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }}
-    .value {{ fill: #a1a1aa; font: 800 18px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }}
-    .grade {{ fill: #d6a56d; font: 900 34px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }}
+    .title {{ fill: #f3f4f6; font: 800 25px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }}
+    .subtitle {{ fill: #7d8590; font: 600 13px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }}
+    .head {{ fill: #7d8590; font: 800 12px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; letter-spacing: 0.8px; }}
+    .metric {{ fill: #c9d1d9; font: 750 16px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }}
+    .value {{ fill: #e5e7eb; font: 850 18px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }}
+    .scope {{ fill: #8b949e; font: 700 12px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }}
   </style>
-  <rect x="10" y="10" width="620" height="270" rx="8" class="card" filter="url(#shadow)"/>
-  <text x="32" y="58" class="title">{escape(USERNAME)}'s GitHub Stats</text>
-  {stats_markup}
-  <circle cx="525" cy="168" r="{radius}" stroke="#30363d" stroke-width="9"/>
-  <circle cx="525" cy="168" r="{radius}" stroke="url(#ring)" stroke-width="9" stroke-linecap="round" stroke-dasharray="{dash:.2f} {gap:.2f}" transform="rotate(-90 525 168)"/>
-  <text x="525" y="180" text-anchor="middle" class="grade">{escape(grade)}</text>
+  <rect x="10" y="10" width="620" height="360" rx="10" class="card" filter="url(#shadow)"/>
+  <rect x="30" y="28" width="580" height="4" rx="2" fill="url(#accent)"/>
+  <text x="32" y="63" class="title">{escape(USERNAME)}'s GitHub Stats</text>
+  <text x="32" y="84" class="subtitle">Lifetime public activity snapshot</text>
+  <text x="82" y="100" class="head">METRIC</text>
+  <text x="430" y="100" class="head">TOTAL</text>
+  <text x="535" y="100" class="head" text-anchor="middle">SCOPE</text>
+  {rows_markup}
 </svg>
 """
 
@@ -201,14 +173,16 @@ def update_readme():
     with open(README_PATH, "r", encoding="utf-8") as file:
         readme = file.read()
 
+    pattern = r"<!-- STATS:START -->.*?<!-- STATS:END -->"
+    if re.search(pattern, readme, flags=re.DOTALL) is None:
+        raise RuntimeError("Stats markers were not found in README.md.")
+
     updated = re.sub(
-        r"<!-- STATS:START -->.*?<!-- STATS:END -->",
+        pattern,
         build_stats_block(),
         readme,
         flags=re.DOTALL,
     )
-    if updated == readme:
-        raise RuntimeError("Stats markers were not found in README.md.")
 
     with open(README_PATH, "w", encoding="utf-8") as file:
         file.write(updated)
