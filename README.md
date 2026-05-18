@@ -4,11 +4,28 @@
 ## GitHub Stats
 
 <!-- STATS:START -->
-| Metric | Total |
-| --- | ---: |
-| Stars | 306 |
-| Commits | 1,787 |
-| Pull Requests | 25 |
-| Issues | 0 |
-| Repositories | 16 |
+<table>
+  <tr>
+    <td align="center">
+      <strong>306</strong><br />
+      <sub>Stars</sub>
+    </td>
+    <td align="center">
+      <strong>1,788</strong><br />
+      <sub>Commits</sub>
+    </td>
+    <td align="center">
+      <strong>25</strong><br />
+      <sub>Pull Requests</sub>
+    </td>
+    <td align="center">
+      <strong>0</strong><br />
+      <sub>Issues</sub>
+    </td>
+    <td align="center">
+      <strong>16</strong><br />
+      <sub>Repositories</sub>
+    </td>
+  </tr>
+</table>
 <!-- STATS:END -->

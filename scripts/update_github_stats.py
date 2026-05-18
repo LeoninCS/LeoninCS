@@ -79,10 +79,19 @@ def build_stats_block(totals):
     ]
     lines = [
         "<!-- STATS:START -->",
-        "| Metric | Total |",
-        "| --- | ---: |",
+        "<table>",
+        "  <tr>",
     ]
-    lines.extend(f"| {label} | {format_number(value)} |" for label, value in rows)
+    for label, value in rows:
+        lines.extend(
+            [
+                '    <td align="center">',
+                f"      <strong>{format_number(value)}</strong><br />",
+                f"      <sub>{label}</sub>",
+                "    </td>",
+            ]
+        )
+    lines.extend(["  </tr>", "</table>"])
     lines.append("<!-- STATS:END -->")
     return "\n".join(lines)
 
