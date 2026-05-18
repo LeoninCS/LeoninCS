@@ -5,6 +5,6 @@
 
 <!-- STATS:START -->
 <picture>
-  <img src="./assets/github-stats.svg" alt="LeoninCS GitHub stats" />
+  <img src="./assets/github-stats-table.svg" alt="LeoninCS GitHub stats" />
 </picture>
 <!-- STATS:END -->

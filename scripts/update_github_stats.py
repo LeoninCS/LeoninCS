@@ -11,7 +11,7 @@ from html import escape
 USERNAME = os.environ.get("GITHUB_USERNAME", "LeoninCS")
 TOKEN = os.environ.get("GH_TOKEN") or os.environ.get("GITHUB_TOKEN")
 README_PATH = "README.md"
-SVG_PATH = "assets/github-stats.svg"
+SVG_PATH = "assets/github-stats-table.svg"
 
 
 def request_json(url):
@@ -156,7 +156,7 @@ def build_stats_block():
         [
             "<!-- STATS:START -->",
             '<picture>',
-            '  <img src="./assets/github-stats.svg" alt="LeoninCS GitHub stats" />',
+            '  <img src="./assets/github-stats-table.svg" alt="LeoninCS GitHub stats" />',
             '</picture>',
             "<!-- STATS:END -->",
         ]
