@@ -4,7 +4,7 @@
 ## GitHub Stats
 
 <!-- STATS:START -->
-<picture>
-  <img src="./assets/github-stats-table.svg" alt="LeoninCS GitHub stats" />
-</picture>
+| Total Stars Earned | Total Commits | Total Pull Requests | Total Issues | Repositories |
+| ---: | ---: | ---: | ---: | ---: |
+| 306 | 1,792 | 25 | 0 | 16 |
 <!-- STATS:END -->
