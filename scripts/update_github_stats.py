@@ -89,7 +89,7 @@ def build_stats_block(totals):
         [
             "<!-- STATS:START -->",
             "| " + " | ".join(labels) + " |",
-            "| " + " | ".join(["---:"] * len(labels)) + " |",
+            "| " + " | ".join([":---:"] * len(labels)) + " |",
             "| " + " | ".join(format_number(value) for value in values) + " |",
             "<!-- STATS:END -->",
         ]
