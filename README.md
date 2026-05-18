@@ -3,9 +3,12 @@
 
 ## GitHub Stats
 
-<p>
-  <img
-    src="https://github-readme-stats.vercel.app/api?username=LeoninCS&show_icons=true&include_all_commits=true&hide_border=true"
-    alt="LeoninCS GitHub stats"
-  />
-</p>
+<!-- STATS:START -->
+| Metric | Total |
+| --- | ---: |
+| Stars | 306 |
+| Commits | 1,787 |
+| Pull Requests | 25 |
+| Issues | 0 |
+| Repositories | 16 |
+<!-- STATS:END -->
