@@ -1,32 +1,18 @@
-<p align="center">
-  <img src="./assets/profile-header.svg" alt="Leon profile header" />
-</p>
-
-# Leon
-
-Backend developer at [@labring](https://github.com/labring), building reliable systems with Go, Cloud Native tooling, and Agent workflows. HENU / Software Engineering / 2023-2027.
-
-**Focus:** Backend · Cloud Native · Agent · ACM · Web3
-
-**Links:** [Blog](https://xianchaoqian.com) · [GoClub](https://goclub.space) · [KnowledgeGraph](https://leonincs.github.io/KnowledgeGraph/) · [Email](mailto:xianchaoqian@foxmail.com)
-
-**Social:** [Bilibili: 布洛克琴](https://space.bilibili.com/491359383) · [小红书: 布洛克琴](https://www.xiaohongshu.com/user/profile/69248f0b000000003702b8d7?xsec_token=YBstH3OwE19B9v53xghZrydstBVVWI2wXWq8lwjrH9F7Q%3D&xsec_source=app_share&shareRedId=OD80NDtLNEs2NzUyOTgwNjk6OTlGPUpA&apptime=1777365113&share_id=8b97234768b843c1a3f733ca5829a418&share_channel=copy_link&appuid=69248f0b000000003702b8d7&xhsshare=CopyLink) · [Instagram](https://www.instagram.com/forever_mvp0?igsh=MXhnNjA3ZjFkbTZwbg==)
+# Hi, I'm Leon
+HENU/SE 2023-2027
+---
+## Blog: https://xianchaoqian.com
+## GoClub：https://goclub.space
+## KnowledgeGraph：https://leonincs.github.io/KnowledgeGraph
 
 <p>
-  <img src="https://skillicons.dev/icons?i=go,python,cpp,mysql,redis,rabbitmq,docker,kubernetes,vue,react" alt="Tech stack icons" />
+  <a href="https://space.bilibili.com/491359383"><img src="https://img.shields.io/badge/Bilibili-布洛克琴-00a1d6?style=for-the-badge&logo=bilibili&logoColor=white&labelColor=111827" alt="Bilibili" /></a>
+  <a href="https://www.xiaohongshu.com/user/profile/69248f0b000000003702b8d7?xsec_token=YBstH3OwE19B9v53xghZrydstBVVWI2wXWq8lwjrH9F7Q%3D&xsec_source=app_share&shareRedId=OD80NDtLNEs2NzUyOTgwNjk6OTlGPUpA&apptime=1777365113&share_id=8b97234768b843c1a3f733ca5829a418&share_channel=copy_link&appuid=69248f0b000000003702b8d7&xhsshare=CopyLink"><img src="https://img.shields.io/badge/小红书-布洛克琴-ff2442?style=for-the-badge&labelColor=111827" alt="小红书" /></a>
+  <a href="https://www.instagram.com/forever_mvp0?igsh=MXhnNjA3ZjFkbTZwbg=="><img src="https://img.shields.io/badge/Instagram-forever__mvp0-E4405F?style=for-the-badge&logo=instagram&logoColor=white&labelColor=111827" alt="Instagram" /></a>
+  <a href="mailto:xianchaoqian@foxmail.com"><img src="https://img.shields.io/badge/Email-xianchaoqian%40foxmail.com-168de2?style=for-the-badge&logo=maildotru&logoColor=white&labelColor=111827" alt="Email" /></a>
 </p>
 
-## Stack
-
-```txt
-Backend      Go / Gin / GORM
-Data         MySQL / Redis / RabbitMQ
-AI           LangChain / LangGraph / Agent workflows
-Frontend     Vue / React
-Infra        Docker / Kubernetes
-```
-
-## Activity
+## GitHub Activity
 
 <!-- STATS:START -->
 <table align="center">
