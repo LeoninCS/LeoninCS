@@ -1,4 +1,4 @@
-# Hi, I'm Leon
+# Hi, I'm Leon 👋
 Homepage: https://xianchaoqian.com  
 GoClub：https://goclub.space  
 KnowledgeGraph：https://leonincs.github.io/KnowledgeGraph  
