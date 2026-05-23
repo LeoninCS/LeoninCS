@@ -1,9 +1,7 @@
 # Hi, I'm Leon
-
 Homepage: https://xianchaoqian.com  
 GoClub：https://goclub.space  
-KnowledgeGraph：https://leonincs.github.io/  KnowledgeGraph  
-
+KnowledgeGraph：https://leonincs.github.io/KnowledgeGraph  
 <p>
   <a href="https://space.bilibili.com/491359383"><img src="https://img.shields.io/badge/Bilibili-布洛克琴-00a1d6?logo=bilibili&logoColor=white&labelColor=111827" alt="Bilibili" /></a>
   <a href="https://www.xiaohongshu.com/user/profile/69248f0b000000003702b8d7?xsec_token=YBstH3OwE19B9v53xghZrydstBVVWI2wXWq8lwjrH9F7Q%3D&xsec_source=app_share&shareRedId=OD80NDtLNEs2NzUyOTgwNjk6OTlGPUpA&apptime=1777365113&share_id=8b97234768b843c1a3f733ca5829a418&share_channel=copy_link&appuid=69248f0b000000003702b8d7&xhsshare=CopyLink"><img src="https://img.shields.io/badge/小红书-布洛克琴-ff2442?labelColor=111827" alt="小红书" /></a>
