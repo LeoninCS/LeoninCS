@@ -1,8 +1,8 @@
 # Hi, I'm Leon
----
-Homepage: https://xianchaoqian.com
-GoClub：https://goclub.space
-KnowledgeGraph：https://leonincs.github.io/KnowledgeGraph
+
+Homepage: https://xianchaoqian.com  
+GoClub：https://goclub.space  
+KnowledgeGraph：https://leonincs.github.io/  KnowledgeGraph  
 
 <p>
   <a href="https://space.bilibili.com/491359383"><img src="https://img.shields.io/badge/Bilibili-布洛克琴-00a1d6?logo=bilibili&logoColor=white&labelColor=111827" alt="Bilibili" /></a>
