@@ -70,27 +70,27 @@ def format_number(value):
 
 
 def build_stats_block(totals):
-    labels = [
-        "Total Stars Earned",
-        "Total Commits",
-        "Total Pull Requests",
-        "Total Issues",
-        "Repositories",
+    cards = [
+        ("Stars", totals["stars"]),
+        ("Commits", totals["commits"]),
+        ("Pull Requests", totals["pull_requests"]),
+        ("Issues", totals["issues"]),
+        ("Repositories", totals["repositories"]),
     ]
-    values = [
-        totals["stars"],
-        totals["commits"],
-        totals["pull_requests"],
-        totals["issues"],
-        totals["repositories"],
-    ]
+    card_cells = []
+    for label, value in cards:
+        card_cells.append(
+            f"    <td align=\"center\"><b>{format_number(value)}</b><br/><sub>{label}</sub></td>"
+        )
 
     return "\n".join(
         [
             "<!-- STATS:START -->",
-            "| " + " | ".join(labels) + " |",
-            "| " + " | ".join([":---:"] * len(labels)) + " |",
-            "| " + " | ".join(format_number(value) for value in values) + " |",
+            '<table align="center">',
+            "  <tr>",
+            *card_cells,
+            "  </tr>",
+            "</table>",
             "<!-- STATS:END -->",
         ]
     )
