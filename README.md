@@ -15,10 +15,10 @@ KnowledgeGraph：https://leonincs.github.io/KnowledgeGraph
 <table align="center">
   <tr>
     <td align="center"><b>370</b><br/><sub>Stars</sub></td>
-    <td align="center"><b>1,956</b><br/><sub>Commits</sub></td>
-    <td align="center"><b>30</b><br/><sub>Pull Requests</sub></td>
+    <td align="center"><b>1,961</b><br/><sub>Commits</sub></td>
+    <td align="center"><b>31</b><br/><sub>Pull Requests</sub></td>
     <td align="center"><b>0</b><br/><sub>Issues</sub></td>
-    <td align="center"><b>19</b><br/><sub>Repositories</sub></td>
+    <td align="center"><b>20</b><br/><sub>Repositories</sub></td>
   </tr>
 </table>
 <!-- STATS:END -->
