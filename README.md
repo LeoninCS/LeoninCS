@@ -14,8 +14,8 @@ KnowledgeGraph：https://leonincs.github.io/KnowledgeGraph
 <!-- STATS:START -->
 <table align="center">
   <tr>
-    <td align="center"><b>379</b><br/><sub>Stars</sub></td>
-    <td align="center"><b>1,998</b><br/><sub>Commits</sub></td>
+    <td align="center"><b>380</b><br/><sub>Stars</sub></td>
+    <td align="center"><b>2,001</b><br/><sub>Commits</sub></td>
     <td align="center"><b>31</b><br/><sub>Pull Requests</sub></td>
     <td align="center"><b>0</b><br/><sub>Issues</sub></td>
     <td align="center"><b>22</b><br/><sub>Repositories</sub></td>
