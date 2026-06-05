@@ -15,10 +15,10 @@ GoClub: https://goclub.space
 <table align="center">
   <tr>
     <td align="center"><b>401</b><br/><sub>Stars</sub></td>
-    <td align="center"><b>2,223</b><br/><sub>Commits</sub></td>
+    <td align="center"><b>2,224</b><br/><sub>Commits</sub></td>
     <td align="center"><b>32</b><br/><sub>Pull Requests</sub></td>
     <td align="center"><b>0</b><br/><sub>Issues</sub></td>
-    <td align="center"><b>23</b><br/><sub>Repositories</sub></td>
+    <td align="center"><b>21</b><br/><sub>Repositories</sub></td>
   </tr>
 </table>
 <!-- STATS:END -->
