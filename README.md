@@ -14,11 +14,11 @@ GoClub: https://goclub.space
 <!-- STATS:START -->
 <table align="center">
   <tr>
-    <td align="center"><b>509</b><br/><sub>Stars</sub></td>
-    <td align="center"><b>2,797</b><br/><sub>Commits</sub></td>
+    <td align="center"><b>511</b><br/><sub>Stars</sub></td>
+    <td align="center"><b>2,789</b><br/><sub>Commits</sub></td>
     <td align="center"><b>35</b><br/><sub>Pull Requests</sub></td>
     <td align="center"><b>0</b><br/><sub>Issues</sub></td>
-    <td align="center"><b>23</b><br/><sub>Repositories</sub></td>
+    <td align="center"><b>20</b><br/><sub>Repositories</sub></td>
   </tr>
 </table>
 <!-- STATS:END -->
