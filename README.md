@@ -14,8 +14,8 @@ GoClub: https://goclub.space
 <!-- STATS:START -->
 <table align="center">
   <tr>
-    <td align="center"><b>517</b><br/><sub>Stars</sub></td>
-    <td align="center"><b>2,958</b><br/><sub>Commits</sub></td>
+    <td align="center"><b>520</b><br/><sub>Stars</sub></td>
+    <td align="center"><b>2,809</b><br/><sub>Commits</sub></td>
     <td align="center"><b>35</b><br/><sub>Pull Requests</sub></td>
     <td align="center"><b>0</b><br/><sub>Issues</sub></td>
     <td align="center"><b>20</b><br/><sub>Repositories</sub></td>
