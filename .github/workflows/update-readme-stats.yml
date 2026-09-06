@@ -1,12 +1,7 @@
 name: Update README stats
 
 on:
-  schedule:
-    - cron: "12 */6 * * *"
   workflow_dispatch:
-  push:
-    branches:
-      - main
 
 permissions:
   contents: write

@@ -24,5 +24,5 @@ GoClub: https://goclub.space
 <!-- STATS:END -->
 
 <p align="center">
-  <sub>Updated automatically with GitHub Actions.</sub>
+  <sub>Updated manually via GitHub Actions.</sub>
 </p>
