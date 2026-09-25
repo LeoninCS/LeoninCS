@@ -2,7 +2,7 @@
 
 **HENU** · SE · 2023～2027
 
-[labring](https://github.com/labring) → [minimax-ai](https://github.com/minimax-ai)
+journey：[Labring](https://github.com/labring)->[MiniMax](https://github.com/minimax-ai)
 
 [Homepage](https://xianchaoqian.com) · [Blog](https://blockblog.top) · [GoClub](https://goclub.space)
 
