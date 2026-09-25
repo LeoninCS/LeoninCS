@@ -1,8 +1,7 @@
 ![Hi，I'am Leon.](https://readme-typing-svg.demolab.com?font=Cascadia+Code&weight=700&size=17&duration=3000&pause=1000&color=CD9148&background=00000000&center=false&width=400&height=50&lines=Hi%EF%BC%8CI%27am+Leon.)
 
-**HENU** · SE · 2023～2027
-
-journey：[Labring](https://github.com/labring)->[MiniMax](https://github.com/minimax-ai)
+- I study SE at HENU from 2023 to 2027.
+- journey：Labring -> [MiniMax](https://github.com/minimax-ai)
 
 [Homepage](https://xianchaoqian.com) · [Blog](https://blockblog.top) · [GoClub](https://goclub.space)
 
