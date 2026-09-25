@@ -1,8 +1,8 @@
 ![Hi，I'am Leon.](https://readme-typing-svg.demolab.com?font=Cascadia+Code&weight=700&size=17&duration=3000&pause=1000&color=CD9148&background=00000000&center=false&width=400&height=50&lines=Hi%EF%BC%8CI%27am+Leon.)
 
-- I'm a software engineering student at HENU (2023–2027).
 - journey： [Labring](https://github.com/labring) &nbsp; -> &nbsp; [MiniMax](https://github.com/minimax-ai)
 - links： [GoClub](https://goclub.space) &nbsp; · &nbsp; [Homepage](https://xianchaoqian.com) &nbsp; · &nbsp; [Blog](https://blockblog.top)
+- I'm a software engineering student at HENU (2023–2027).
 - I focus on backend development, cloud-native systems, and cloud infrastructure.
 
 <br>
