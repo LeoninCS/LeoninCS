@@ -2,8 +2,7 @@
 
 - I study SE at HENU from 2023 to 2027.
 - journey：Labring -> [MiniMax](https://github.com/minimax-ai)
-
-[Homepage](https://xianchaoqian.com) · [Blog](https://blockblog.top) · [GoClub](https://goclub.space)
+- links：[Homepage](https://xianchaoqian.com) · [Blog](https://blockblog.top) · [GoClub](https://goclub.space)
 
 <p>
   <a href="https://space.bilibili.com/491359383"><img src="https://img.shields.io/badge/Bilibili-布洛克琴-00a1d6?logo=bilibili&logoColor=white&labelColor=111827" alt="Bilibili" /></a>
