@@ -2,7 +2,7 @@
 
 - I'm a software engineering student at HENU (2023–2027).
 - journey：Labring -> [MiniMax](https://github.com/minimax-ai)
-- links：[Homepage](https://xianchaoqian.com) · [Blog](https://blockblog.top) · [GoClub](https://goclub.space)
+- links：[GoClub](https://goclub.space) · [Homepage](https://xianchaoqian.com) · [Blog](https://blockblog.top)
 
 <p>
   <a href="https://space.bilibili.com/491359383"><img src="https://img.shields.io/badge/Bilibili-布洛克琴-00a1d6?logo=bilibili&logoColor=white&labelColor=111827" alt="Bilibili" /></a>
