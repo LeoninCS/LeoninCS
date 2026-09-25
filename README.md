@@ -1,4 +1,4 @@
-![Hi，I'am Leon.](https://readme-typing-svg.demolab.com?font=VT323&size=40&duration=3000&pause=1000&color=CD9148&background=03070A&vCenter=true&width=400&height=100&lines=Hi%EF%BC%8CI%27am+Leon.)
+![Hi，I'am Leon.](https://readme-typing-svg.demolab.com?font=VT323&size=32&duration=3000&pause=1000&color=CD9148&background=03070A&vCenter=true&width=336&height=80&lines=Hi%EF%BC%8CI%27am+Leon.)
 
 **HENU** · SE · 2023～2027
 
