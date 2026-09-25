@@ -3,7 +3,7 @@
 - I'm a software engineering student at HENU (2023–2027).
 - journey： [Labring](https://github.com/labring) &nbsp; -> &nbsp; [MiniMax](https://github.com/minimax-ai)
 - links： [GoClub](https://goclub.space) &nbsp; · &nbsp; [Homepage](https://xianchaoqian.com) &nbsp; · &nbsp; [Blog](https://blockblog.top)
-- focus: Cloud Native &nbsp; · &nbsp; Cloud Infra
+- focus: Backend &nbsp; · &nbsp; Cloud Native &nbsp; · &nbsp; Cloud Infra
 
 <br>
 
